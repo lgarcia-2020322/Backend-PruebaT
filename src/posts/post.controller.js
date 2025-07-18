@@ -7,7 +7,7 @@ export const createPost = async (req, res) => {
     const post = new postModel({ name, title, thumbnail, content });
 
     await post.save();
-
+//h
     res.status(200).json({
       post,
     });
